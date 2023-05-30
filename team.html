@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <!-- custom styles -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    <!-- google fonts -->
+    <!-- libre baskerville -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+
+    <!-- LinkedIn Icon -->
+    <script src="https://kit.fontawesome.com/3a9e954864.js" crossorigin="anonymous"></script>
+
+    <!-- open sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <title>Meet the Team</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo">
+        </div>
+        <nav>
+            <ul class="navbar">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="team.html">Meet the Team</a></li>
+                <li><a href="schedule.html">Schedule a Meeting</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Meet the Team</h1>
+
+    <div class="team-member">
+        <img class="team-member-image" src="images/noah.png" alt="Noah Burlingame">
+        <h2>Noah Burlingame</h2>
+        <h4>President and Chairman</h4>
+        <p>Noah Burlingame is the current Chairman and President of Digital Footprint Marketing. He is currently a
+            Junior at the Kelley School of Business at Indiana University, Co-Majoring in Marketing and Professional
+            Sales, with a Minor in Music. Noah is currently the Co-Founder and Co-President of the Social Media
+            Marketing Club, as well as the Director of Public Relations for Habitat for Humanity. Outside of academics,
+            Noah plays guitar in bands in both Bloomington and Chicago, and can play other instruments such as the
+            drums, piano, and bass. He is a avid supporter of the Chicago Bears, Cubs, and Blackhawks, and wants to work
+            to Chicago once he graduates. </p>
+    </div>
+
+    <div class="team-member">
+        <img class="team-member-image" src="images/johnny.jpeg" alt="Johnny Talbott">
+        <h2>Johnny Talbott</h2>
+        <h4>CEO</h4>
+        <p>Johnny Talbott is the current (disputed) CEO of Digital Footprint Marketing. A Junior at the Kelley School of
+            Business, Johnny has excelled as a student with a 3.92 GPA, and admission into the Kelley Honors program. He
+            is the Co-Founder and Co-President of IU's Social Media Marketing club, the director of finance for Habitat
+            for Humanity Bloomington, and a committee member of IUDM. He has been worked for StudioMGD for the last
+            year, running the social media of a Chicago based grocery store.</p>
+    </div>
+
+    <div class="team-member">
+        <img class="team-member-image" src="images/floyd.png" alt="Floyd">
+        <h2>Floyd</h2>
+        <h4>Head of Moral</h4>
+        <p></p>
+    </div>
+</body>
+
+
+
+<footer>
+    <div class="footer-left">
+        <p>&copy; 2023 Digital Footprint Marketing LLC.</p>
+    </div>
+    <div class="footer-right">
+
+        <a href="https://www.facebook.com/profile.php?id=100093093426329"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/digitalfootprintmarketingllc/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/digital-footprint-marketing-llc/"><i class="fa-brands fa-linkedin-in"></i></a>
+    </div>
+</footer>
+
+
+<script>
+    // JavaScript code to add 'current' class to the navigation link of the current page
+    window.addEventListener('DOMContentLoaded', function () {
+        var currentPage = window.location.pathname.split('/').pop(); // Extracts the current page filename
+        var links = document.querySelectorAll('.navbar li a');
+
+        for (var i = 0; i < links.length; i++) {
+            if (links[i].getAttribute('href') === currentPage) {
+                links[i].parentNode.classList.add('current'); // Adds the 'current' class to the parent <li> element
+                break; // Exits the loop after finding the current page link
+            }
+        }
+    });
+</script>
+
+
+</html>
